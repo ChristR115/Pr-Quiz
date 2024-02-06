@@ -26,23 +26,29 @@ export default function Question(props:IProps){
         }
     }
     const nextQuestion = () =>{
-        for (let i=0;i<4;i++){
-            document.getElementById(i.toString())!.style.background="grey"
+        let i = index+1        
+        if (i == props.options.length){
+            alert("Felicidades, completó la prueba")
         }
-        setStateNext(true); setIndex(index+1); setOptions(props.options[index])
+        else{
+        for (let j=0;j<4;j++){
+            document.getElementById(j.toString())!.style.background="grey"
+        }
+        setIndex(i); setStateNext(true); setOptions(props.options[i])
+        }
     }
 
     const Answer = (i:number, text:string) =>{
         let iString = i.toString()
         return (
         <Col>
-            <Button id={iString} onClick={() => check(iString.toString(),i==options.index)} className='g-col-3 m-3 p-8 w-75 h-75' >{text}</Button>
+            <Button id={iString} onClick={() => check(iString.toString(),i==options.index)} className='g-col-3 m-3 p-8 w-75 h-75' style={{background:"gray"}}>{text}</Button>
         </Col>
         )
     }
     const [index, setIndex] = React.useState(0)
     const [stateNext, setStateNext] = React.useState(true)
-    const [options, setOptions] = React.useState(props.options[0])
+    const [options, setOptions] = React.useState(props.options[index])
 
     return(
         <Container className="rounded w-75 p-2 bg-primary text-center">

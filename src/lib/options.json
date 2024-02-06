@@ -3,9 +3,9 @@
     {"op":["5.1416","3.1416", "2.5642","1.2625"], "index":1},
     {"op":["Aminoácido desoxirribonucleico","Ácido desoxirribonucleico", "Ácido deoxibonucleico","Ácido ribonucleico"], "index":1},
     {"op":["Oxígeno","Mercurio", "Nitrógeno","Hidrógeno"], "index":2},
-    {"op":["99.97°C","80.1°C", "150.5°C","101.0°C"], "index":2},
-    "",
-    "",
-    "",
-    ""
+    {"op":["99.97°C","80.1°C", "150.5°C","101.0°C"], "index":0},
+    {"op":["NaCl","CO", "ClNa","PlCl"], "index":0},
+    {"op":["4","23", "10","75"], "index":3},
+    {"op":["Lise Meitner","Joselyn Bell", "Marie Curie","Sophie Germain"], "index":2},
+    {"op":["Reptiles","Anfibios", "Mamíferos","Ovíparos"], "index":1}
 ]}
